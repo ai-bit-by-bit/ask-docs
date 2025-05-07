@@ -58,25 +58,43 @@ streamlit run app.py
 
 ```
 ask-docs/
-│
-├── app.py                 # Main Streamlit app
-├── chains/                # LangChain pipelines
-├── utils/                 # Helper functions
-├── embeddings/            # Vector store logic
-├── data/                  # Uploaded files
-├── requirements.txt       # Python dependencies
-└── README.md              # You are here
+├── app
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── document_handler.cpython-311.pyc
+│   │   └── vector_store.cpython-311.pyc
+│   ├── document_handler.py
+│   ├── main.py
+│   ├── qa_chain.py
+│   └── vector_store.py
+├── docker-compose.yml
+├── Dockerfile
+├── docs
+│   └── RAG_Detailed_Overview.pdf
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
 ## 📌 TODOs / Roadmap
 
-- [x] Multi-document upload support
-- [ ] Downloadable Q&A chat history
-- [ ] Add RAG evaluation and similarity visualization
-- [ ] Deploy with Docker and Streamlit Cloud
-- [ ] Switch between cloud and local LLMs via settings
+- [x] 🗂 File upload
+- [x] 🧠 Text extraction
+- [x] ✂️ Chunking text
+- [x] 🧬 Embedding via OpenAI
+- [x] 🧠 FAISS in-memory store
+- [x] 🤖 LangChain Q&A
+- [x] 💬 Streamlit chat input
+- [ ] 📁 Multi-document upload support
+- [ ] 💾 Downloadable Q&A chat history
+- [ ] 📊 Add RAG evaluation and similarity visualization
+- [ ] 🚀 Deploy with Docker and Streamlit Cloud
+- [ ] 🔄 Switch between cloud and local LLMs via settings
+- [ ] 🧹 Clear session / start new chat button
+- [ ] 🧠 Show retrieved chunks in the UI
+- [ ] 🎨 Theming & UX polish (sidebar, logo, etc.)
 
 ---
 

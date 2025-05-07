@@ -1,20 +1,9 @@
-# Core app dependencies
 streamlit
 langchain
-chromadb
-
-# Embedding and LLMs
+langchain-community
 openai
 tiktoken
-
-# File parsing
-PyMuPDF           # for PDFs
-python-docx       # for DOCX files
-pdfminer.six      # optional, better for structured PDF text extraction
-
-# Typing support and optional tools
-typing-extensions
-
-# Optional for advanced embedding (HuggingFace, Sentence Transformers)
-# sentence-transformers
-# langchain-community
+PyMuPDF
+python-docx
+pdfminer.six
+faiss-cpu
