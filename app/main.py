@@ -14,3 +14,7 @@ if uploaded_file is not None:
         st.text_area("📄 Extracted Text", text, height=400)
 else:
     st.warning("No file uploaded yet!")
+
+# Footer
+st.divider()
+st.text("Made with ❤️ by [A.I. Bit-by-Bit](https://github.com/ai-bit-by-bit)")
